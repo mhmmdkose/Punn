@@ -1,0 +1,20 @@
+/* Motion is attached progressively; content remains visible without JavaScript. */
+.reveal.in-view,.hero-slide:not([hidden]){animation:none}
+.hero-copy h1{padding-bottom:.06em}
+.hero-autoplay{display:grid;place-items:center;flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid #dce3ef;background:white;color:#2448ed;font-size:12px;padding:0}
+.hero-autoplay:hover{background:#edf2ff;border-color:#2448ed}
+.hero-slider-controls{gap:11px}
+.hero-progress{height:2px;background:#e8edf6;overflow:hidden;margin:12px 7px 0 10px;border-radius:2px}
+.hero-progress>span{display:block;height:100%;background:linear-gradient(90deg,#2448ed,#88a8ff);transform:scaleX(0);transform-origin:left}
+.feature-card,.price-card,.solution-details article{transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s,border-color .4s}
+.feature-card:hover,.solution-details article:hover{transform:translateY(-5px);border-color:#b8c9fa;box-shadow:0 18px 45px #14213d0c}
+.price-card:hover{transform:translateY(-6px);box-shadow:0 22px 50px #14213d15}
+.feature-icon{transition:transform .5s cubic-bezier(.22,1,.36,1),background .4s}
+.feature-card:hover .feature-icon{transform:rotate(-8deg) scale(1.08);background:#e4ecff}
+.mini-chart i{transform-origin:bottom}
+.how-photo img,.closing-panel>img{transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.how-photo:hover img,.closing-panel:hover>img{transform:scale(1.045)}
+.steps article>span{transition:background .3s,color .3s,transform .3s}
+.steps article:hover>span{background:#2448ed;color:#fff;transform:rotate(-8deg)}
+@media(max-width:767px){.hero-slider-controls{gap:8px}.hero-autoplay{width:28px;height:28px}.hero-slider-arrows{gap:4px}.hero-slider-arrows button{width:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.hero-progress{display:none}.hero-autoplay{display:none}.feature-card:hover,.price-card:hover,.solution-details article:hover,.how-photo:hover img,.closing-panel:hover>img,.feature-card:hover .feature-icon,.steps article:hover>span{transform:none}}

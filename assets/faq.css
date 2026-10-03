@@ -1,0 +1,9 @@
+.faq-list details{display:flow-root}
+.faq-list summary{transition:color .2s ease}
+.faq-list summary:hover,.faq-list details.faq-expanded summary{color:#2448ed}
+.faq-list details summary>span{transition:background .25s,border-color .25s}
+.faq-list details summary[aria-expanded=false]>span{background:transparent}
+.faq-list details summary[aria-expanded=false]>span:after{transform:rotate(90deg)}
+.faq-list details summary[aria-expanded=true]>span{background:#e8efff;border-color:#c9d7fa}
+.faq-list details summary[aria-expanded=true]>span:after{transform:rotate(0)}
+@media(prefers-reduced-motion:reduce){.faq-list summary,.faq-list summary>span{transition:none}}

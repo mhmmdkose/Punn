@@ -1,0 +1,15 @@
+.sectors-section{background:linear-gradient(180deg,#f6f8fd,#eef3fc);border-block:1px solid #e6ecf6;margin-top:70px;position:relative;isolation:isolate}
+.sectors-section:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 90% 0,#dbe6ff90,transparent 50%)}
+.sectors-section .section-heading p{max-width:430px;margin-bottom:0}.sectors-section .eyebrow{color:#2448ed}
+.sectors-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.sector-card{display:flex;flex-direction:column;position:relative;overflow:hidden;padding:27px 25px 22px;border:1px solid #dfe7f4;border-radius:14px;background:#ffffffed;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s,border-color .35s}
+.sector-card:after{content:'';position:absolute;inset:auto 25px 0;height:2px;background:#2448ed;transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.sector-card:hover{transform:translateY(-5px);border-color:#b8cbfa;box-shadow:0 15px 35px #2349a310}.sector-card:hover:after{transform:scaleX(1)}
+.sector-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}
+.sector-icon{display:grid;place-items:center;width:51px;height:51px;border:1px solid #dce6ff;border-radius:15px;background:linear-gradient(140deg,#f4f7ff,#e9f0ff);color:#2448ed;transition:transform .4s}.sector-icon svg{width:27px;height:27px}.sector-card:hover .sector-icon{transform:rotate(-7deg)}
+.sector-number{font-size:10px;color:#8b9bb7;font-variant-numeric:tabular-nums}
+.sector-card h3{font-size:20px;margin-bottom:10px;letter-spacing:-.5px}.sector-card p{font-size:12px;line-height:1.8;margin-bottom:24px;color:#62718b;max-width:210px}.sector-label{font-size:7px;letter-spacing:1.5px;color:#7b8fac;border-top:1px solid #edf1f7;padding-top:16px;margin-top:auto}
+.sectors-bottom{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:30px;padding-top:25px;border-top:1px solid #dce5f3}.sectors-bottom>div{display:flex;align-items:center;gap:11px;font-size:12px;color:#64738f}.sectors-bottom strong{color:#233b69;font-weight:500}.sectors-bottom .button{font-size:11px}
+@media(max-width:991px){.sectors-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-card p{max-width:none}.sectors-section{margin-top:50px}}
+@media(max-width:767px){.sectors-section{margin-top:35px}.sectors-grid{gap:12px}.sector-card{padding:20px 15px 18px;border-radius:12px}.sector-top{margin-bottom:20px}.sector-icon{width:43px;height:43px;border-radius:12px}.sector-icon svg{width:23px;height:23px}.sector-card h3{font-size:17px}.sector-card p{font-size:11px;margin-bottom:20px}.sector-label{font-size:6px;letter-spacing:.7px}.sectors-bottom{align-items:flex-start;flex-direction:column;gap:20px}.sectors-bottom>div{font-size:11px;line-height:1.8}.sectors-bottom .button{width:100%}}
+@media(prefers-reduced-motion:reduce){.sector-card,.sector-card:after,.sector-icon{transition:none}.sector-card:hover,.sector-card:hover .sector-icon{transform:none}}
